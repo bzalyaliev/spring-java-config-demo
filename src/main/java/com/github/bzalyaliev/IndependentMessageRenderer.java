@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 public class IndependentMessageRenderer {
 
     // Spring заинжектит сюда бин MessageRenderer
-    @Autowired
-    private MessageRenderer renderer;
+    // Лучше без @Autowired
+    private final MessageRenderer renderer;
 
     public IndependentMessageRenderer(MessageRenderer renderer) {
         this.renderer = renderer;

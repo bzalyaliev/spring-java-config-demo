@@ -9,6 +9,5 @@ public class Main {
         IndependentMessageRenderer renderer = context.getBean(IndependentMessageRenderer.class);
 
         renderer.print();
-
     }
 }
